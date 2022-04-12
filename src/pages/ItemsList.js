@@ -7,7 +7,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 function ItemsList(props) {
   const [{ likedBasket }, dispatch] = useStateValue();
-  
+
   const addToBasket = (id,name,image, gender, species, alive, status) => {
     dispatch({
       type: 'ADD_TO_LIKEDBASKET',
@@ -43,7 +43,7 @@ function ItemsList(props) {
   return (  
         <div className="itemsList">   
           {!false && data.characters.results.slice(0,9).map((character, i) => {
-            let newValue = likedBasket.some((item) => {
+            let newValue = likedBasket?.some((item) => {
               if(item.id === character.id) {
                 return true
               } else {
