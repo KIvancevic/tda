@@ -5,7 +5,7 @@ export const initialState = {
 const reducer = (state,action) => {
   switch(action.type) {
     case 'ADD_TO_LIKEDBASKET':
-      let filteredBasket = state.likedBasket.some((item) => {
+      let filteredBasket = state.likedBasket?.some((item) => {
         if(item.id === action.item.id) {
           return true
         } else {
