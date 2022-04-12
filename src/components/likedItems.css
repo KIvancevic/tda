@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: auto;
+}
+
+.innerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.innerDiv div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.likedItemImage {
+  width: 250px;
+  height: 250px;
+}
+
+.likeImageButton {
+  text-align: center;
+  width: 300px;
+  margin-bottom: 60px;
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: darkgreen;
+  color: white;
+  height: 35px;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.likeImageButton:hover {
+  transform: scale(1);
+}

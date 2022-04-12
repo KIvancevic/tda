@@ -1,0 +1,33 @@
+.itemsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.liked {
+  font-size: 20px;
+  z-index: 1;
+}
+
+.indicatorContainer {
+  position: relative;
+  width: 300px;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out
+}
+
+.indicatorContainer:hover {
+  transform: scale(1);
+}
+
+.indicatorContainer img {
+  cursor: pointer;
+}
+
+.indicator {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: blue;
+}

@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  margin-bottom: 10pxs;
+}
+
+
+.numberOfLikedItems {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.navButton {
+  margin-right: 10px;
+  width: 80px;
+  height: 35px;
+  cursor: pointer;
+  background-color: aqua;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 10px;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.navButton:hover {
+  transform: scale(1);
+}
+
+@media screen and (min-width: 1106px) {
+  .navbar {
+    flex-direction: row;
+  }
+}

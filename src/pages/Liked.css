@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: wrap;
+}
+
+.itemsList div{
+  margin-bottom: 15px;
+}
+
+.basketDiv {
+  width: 100%;
+  height: auto;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.button {
+  height: 35px;
+  width: 45%;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: aqua;
+}
+
+.button:hover {
+  background-color: darkgreen;
+  color: white;
+}
