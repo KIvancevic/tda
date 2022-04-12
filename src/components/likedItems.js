@@ -2,7 +2,7 @@ import { useStateValue } from '../stateProvider/stateProvider'
 import './likedItems.css'
 
 function LikedItems({ id, image, name, gender, status, species, }) {
-  const [ dispatch] = useStateValue();
+  const [{likedBasket}, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
     dispatch({
